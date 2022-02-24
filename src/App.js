@@ -8,10 +8,13 @@ export default function App() {
   function startQuiz() {
     setQuiz((PrevQuiz) => (PrevQuiz = !PrevQuiz));
   }
-  console.log(quiz);
   return (
     <div className="App">
-      {quiz ? <Questions /> : <CoverPage handleClick={startQuiz} />}
+      {quiz ? (
+        <Questions handleClick={startQuiz} quizState={quiz} />
+      ) : (
+        <CoverPage handleClick={startQuiz} />
+      )}
     </div>
   );
 }

@@ -38,7 +38,6 @@ html {
   border-radius: 8px;
   border: 1px solid #00baad;
   color: #00baad;
-
   background-color: white;
 }
 .cover--questions {
@@ -75,11 +74,23 @@ hr {
   margin: 15px 5px;
 }
 .quiz--submit {
-  max-width: 20%;
-  justify-self: center;
-  align-self: center;
+  width: 40%;
+  margin: 0% 30%;
 }
 .options p:hover {
   background-color: #a2ebe6;
   color: #00465c;
+}
+.selected {
+  color: blue !important;
+  background-color: lightblue !important;
+}
+#correct,
+.markcorrect {
+  color: green !important;
+  background-color: rgb(218, 253, 166) !important;
+}
+#incorrect {
+  color: red !important;
+  background-color: rgb(245, 185, 185) !important;
 }
